@@ -23,6 +23,17 @@ export function Projects() {
       gradient: "bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500",
     },
     {
+      title: "Multi-Threaded Computer Vision Engine",
+      category: "Computer Vision",
+      description: "Built a zero-dependency C++20 vision pipeline (grayscale, Gaussian blur, Sobel edge detection) without OpenCV, cutting total pipeline latency from 41.23ms to 20.73ms (2.0x speedup). Engineered a custom ThreadPool avoiding OpenMP overhead, and designed a cache-aware 2D Tile Dispatcher for optimal parallel processing. Implemented a contiguous, zero-copy image data structure using C++ move semantics to minimize heap allocations and sustain >200 MPixels/s throughput.",
+      tech: ["C++20", "STL", "Multithreading", "Memory Management", "Cache Optimization"],
+      github: "https://github.com/dayshaun-1/parallel-vision",
+      demo: null,
+      featured: true,
+      image: "",
+      gradient: "bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500",
+    },
+    {
       title: "ByteLearn",
       category: "Full Stack",
       description: "Full-stack E-learning platform with authentication, payments, course management, and role-based access control.",

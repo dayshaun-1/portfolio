@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BookOpen, Award, FileText } from "lucide-react";
+import { BookOpen, Award, ExternalLink } from "lucide-react";
 
 export function Research() {
   return (
@@ -37,7 +37,7 @@ export function Research() {
           <span className="hidden sm:block text-zinc-300 dark:text-zinc-700">•</span>
           <span className="text-zinc-900 dark:text-zinc-200">IEEE SPCOM 2026</span>
           <span className="hidden sm:block text-zinc-300 dark:text-zinc-700">•</span>
-          <span className="text-zinc-500 italic">IEEE Xplore publication pending</span>
+          <span className="text-zinc-900 dark:text-zinc-200">Published</span>
         </div>
 
         <div className="mb-8">
@@ -64,12 +64,9 @@ export function Research() {
         </div>
 
         <div className="flex gap-4 border-t border-zinc-100 dark:border-zinc-800 pt-6">
-          <button disabled className="inline-flex items-center px-4 py-2 border border-zinc-200 dark:border-zinc-800 rounded-md text-sm font-medium text-zinc-400 dark:text-zinc-600 bg-zinc-50 dark:bg-zinc-900/50 cursor-not-allowed">
-            <FileText className="w-4 h-4 mr-2" /> PDF Coming Soon
-          </button>
-          <button disabled className="inline-flex items-center px-4 py-2 border border-zinc-200 dark:border-zinc-800 rounded-md text-sm font-medium text-zinc-400 dark:text-zinc-600 bg-zinc-50 dark:bg-zinc-900/50 cursor-not-allowed">
-            IEEE Xplore Link Pending
-          </button>
+          <a href="https://ieeexplore.ieee.org/document/11622957" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 border border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 rounded-md text-sm font-medium text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900 transition-colors">
+            <ExternalLink className="w-4 h-4 mr-2" /> IEEE Xplore
+          </a>
         </div>
       </motion.div>
     </section>
